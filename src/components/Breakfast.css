@@ -1,0 +1,9 @@
+.button-breakfast{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn-menu{
+    margin: 1em;
+}
