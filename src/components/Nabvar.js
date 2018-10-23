@@ -14,10 +14,12 @@ export default class Navbar extends Component{
 
     handleChangeBreakfast() {
         console.log('Entraste a desayuno');
+        this.props.breakfastOption('breakfast');
     }
 
     handleChangeMeal() {
         console.log('Entraste a comida');
+        this.props.mealOption('meal');
     }
 
     render(){

@@ -14,7 +14,6 @@ export default class Menu extends Component{
                     <SectionOrder/>
                 </div>
             </div>
-            
         );
     }
 }

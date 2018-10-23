@@ -5,6 +5,12 @@ import Meal from './Meal';
 // manejar los props conditional render
 
 export default class SectionMenu extends Component{
+
+    componentDidMount(){
+        console.log(this.props.mealOption);
+        
+    }
+
     render(){
         return(
             <section className="col-md-7">
