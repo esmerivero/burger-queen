@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Logo from '../assets/bq-logo.png';
 import './Navbar.css';
 import ButtonLogout from './ButtonLogout';
+import Meal from './Meal';
 
 export default class Navbar extends Component{
     constructor(props){
@@ -13,12 +14,10 @@ export default class Navbar extends Component{
 
     handleChangeBreakfast() {
         console.log('Entraste a desayuno');
-        
     }
 
     handleChangeMeal() {
         console.log('Entraste a comida');
-        
     }
 
     render(){
