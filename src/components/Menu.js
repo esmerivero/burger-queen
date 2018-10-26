@@ -25,10 +25,6 @@ export default class Menu extends Component{
         // })
     }
 
-    componentDidUpdate(){
-        console.log(this.state.order);
-    }
-
     render(){
         return(
             <div className="container">
