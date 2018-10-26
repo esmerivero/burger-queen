@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Breakfast from './Breakfast';
 import Meal from './Meal';
+import './SectionMenu.css'
 
 // manejar los props conditional render
 
@@ -29,12 +30,12 @@ export default class SectionMenu extends Component{
         if(this.state.breakfast){
             return(
                 <section className="col-md-7">
-    
-                 <section className="mr-auto">
-                    <button type="button" className="btn btn-primary btn-lg buttons" onClick={this.handleChangeBreakfast}>Desayuno</button>
-                    <button type="button" className="btn btn-primary btn-lg buttons" onClick={this.handleChangeMeal}>Comida / cena</button>
+
+                <section className="mr-auto">
+                    <button type="button" className="btn btn-warning btn-lg buttons" onClick={this.handleChangeBreakfast}>Desayuno</button>
+                    <button type="button" className="btn btn-warning btn-lg buttons" onClick={this.handleChangeMeal}>Comida / cena</button>
                 </section>
-                    <Breakfast />
+                    <Breakfast getOption={this.props.getOrder}/>
                 </section>
             );
         }
@@ -43,10 +44,10 @@ export default class SectionMenu extends Component{
                 <section className="col-md-7">
     
                  <section className="mr-auto">
-                    <button type="button" className="btn btn-primary btn-lg buttons" onClick={this.handleChangeBreakfast}>Desayuno</button>
-                    <button type="button" className="btn btn-primary btn-lg buttons" onClick={this.handleChangeMeal}>Comida / cena</button>
+                    <button type="button" className="btn btn-warning btn-lg buttons" onClick={this.handleChangeBreakfast}>Desayuno</button>
+                    <button type="button" className="btn btn-warning btn-lg buttons" onClick={this.handleChangeMeal}>Comida / cena</button>
                 </section>
-                    <Meal />
+                    <Meal getOption={this.props.getOrder}/>
                 </section>
             );
         }
